@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- 20160510 WDS Init -->
-<!-- 20160510 LE This file lists the JAR files in the EAR (in our case po.jar) and tells the JBoss server what files to look for and where. The root URL for the application is also specified in this file as 'context-root'.-->
+<!-- 20160510 WDS Init 
+     20160510 LE This file lists the JAR files in the EAR (in our case po.jar) and tells the JBoss server what files to look for and where. The root URL for the application is also specified in this file as 'context-root'.-->
 
 <application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:application="http://java.sun.com/xml/ns/javaee/application_5.xsd"
