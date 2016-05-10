@@ -1,0 +1,6 @@
+* remote origin
+  Fetch URL: https://github.com/warunid/inventory_control_and_billing_system.git
+  Push  URL: https://github.com/warunid/inventory_control_and_billing_system.git
+  HEAD branch: master
+  Remote branch:
+    master tracked
