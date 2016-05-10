@@ -1,0 +1,58 @@
+# 20160510	WDS	INIT-RENAME THIS FILE TO BUILD.PROPERTIES
+ 		
+# these are the names of the JEE modules
+icb.ear.name=icb.ear
+icb_grn.war.name=icb_grn.war
+icb_grn.jar.name=icb_grn.jar
+icb_public.war.name=icb_public.war
+icb_public.jar.name=icb_public.jar
+icb_po.jar.name = icb_po.jar
+icb_po.war.name = icb_po.war
+icb_admin.war.name=icb_admin.war
+icb_admin.jar.name = icb_admin.jar
+icb_item.war.name=icb_item.war
+icb_item.jar.name=icb_item.jar
+icb_common.jar.name=icb_common.jar
+
+###### directories where source code is kept (relative to where this file is)
+
+icb.ear.dir=${basedir}/${icb.ear.name}
+icb_grn.war.dir=${basedir}/${icb_grn.war.name}
+icb_grn.jar.dir=${basedir}/${icb_grn.jar.name}
+icb_public.war.dir=${basedir}/${icb_public.war.name}
+icb_public.jar.dir=${basedir}/${icb_public.jar.name}
+icb_po.war.dir=${basedir}/${icb_po.war.name}
+icb_po.jar.dir=${basedir}/${icb_po.jar.name}
+icb_admin.war.dir=${basedir}/${icb_admin.war.name}
+icb_admin.jar.dir=${basedir}/${icb_admin.jar.name}
+icb_item.war.dir=${basedir}/${icb_item.war.name}
+icb_item.jar.dir=${basedir}/${icb_item.jar.name}
+icb_common.jar.dir=${basedir}/${icb_common.jar.name}
+
+# directories for third-party libraries
+
+thirdPartyDir=${basedir}/../third_party
+
+# directories for building
+
+buildDir=${basedir}/build
+targetEarName=icb.ear
+
+# JBOSS Server Directories
+
+jbossHome=C:/JBAP630GA
+jbossLibDir=${jbossHome}/modules
+jbossDeployDir=${jbossHome}/standalone/deployments
+jbossClientLib=${jbossHome}/bin/client
+
+# java settings
+javadebug=true
+# specify javac executable used.  Use with fork=yes.  Defaults to same as java version running Ant
+# ****** PRODUCTION COMPILATION: SET TO jdk 8 COMPILER 
+icb.build.executable=C:/JDKSE825X64/bin/javac.exe
+# set the target attribute for javac task. Can be overridden by setting it in javac, 'target' attribute -->
+# ****** PRODUCTION COMPILATION: SET TO 1.8
+ant.build.javac.target=1.8
+# set the source for javac task. This value can be overridden by setting it in javac, 'source' attribute -->
+# ****** PRODUCTION COMPILATION: SET TO 1.8
+ant.build.javac.source=1.8
