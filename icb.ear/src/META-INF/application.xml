@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 20160510 WDS Init -->
+<!-- 20160510 LE This file lists the JAR files in the EAR (in our case po.jar) and tells the JBoss server what files to look for and where. The root URL for the application is also specified in this file as 'context-root'.-->
+
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:application="http://java.sun.com/xml/ns/javaee/application_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/application_5.xsd"
+	version="5">
+	<display-name>ICB</display-name>
+	<module>
+		<ejb>icb_common.jar</ejb>
+	</module>
+	<module>
+		<ejb>icb_admin.jar</ejb>
+	</module>
+	<module>
+		<ejb>icb_grn.jar</ejb>
+	</module>
+	<module>
+		<ejb>icb_item.jar</ejb>
+	</module>
+	<module>
+		<ejb>icb_po.jar</ejb>
+	</module>
+	<module>
+		<ejb>icb_public.jar</ejb>
+	</module>
+	<module>
+		<web>
+			<web-uri>icb_item.war</web-uri>
+			<context-root>/</context-root>
+		</web>
+	</module>
+	<module>
+		<web>
+			<web-uri>icb_public.war</web-uri>
+			<context-root>public</context-root>
+		</web>
+	</module>
+	<module>
+		<web>
+			<web-uri>icb_po.war</web-uri>
+			<context-root>po</context-root>
+		</web>
+	</module>
+	<module>
+		<web>
+			<web-uri>icb_grn.war</web-uri>
+			<context-root>grn</context-root>
+		</web>
+	</module>
+  <module>
+    <web>
+      <web-uri>icb_admin.war</web-uri>
+      <context-root>/config</context-root>
+    </web>
+  </module>  
+  </application>
